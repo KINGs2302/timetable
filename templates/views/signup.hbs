@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/css/signup.css">
+  <title>TT Generator</title>
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+     <div class="navbar">
+           <nav class="himg" >
+                <img src="/pictuer/4.png" class="logo">
+            </nav>
+            <nav>
+                
+                <ul>
+                     <li><a href="home">HOME</a></li>
+                    <li><a href="faculty">FACULTY</a></li>
+                    <li><a href="cours">GENERATOR</a></li>
+                    <li><a href="login">LOGIN</a></li>
+                    <li><a href="signup"><span>SIGN-UP</span></a></li>
+                    <li><a href="about">ABOUT_US</a></li>
+                </ul>
+            </nav>
+        </div>
+    {{>navbar}}
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="/signup" method="post">
+                    <h2>Sign-Up</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="Email" required name="email" placeholder="Email">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required name="password" placeholder="Password">
+                        <label for="">Password</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="confirm password" required required name="cpassword" placeholder="confirm Password">
+                        <label for="">confirm Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me</label>
+                      
+                    </div>
+                    <input type="submit" class="form-submit" value="signup" />
+                    <div class="register">
+                        <p>Have an account <a href="/login">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
